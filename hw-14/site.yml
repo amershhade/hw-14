@@ -1,4 +1,2 @@
 ---
-- hosts: localhost
-  roles:
-    - common
+-import-playbook: copy.yml

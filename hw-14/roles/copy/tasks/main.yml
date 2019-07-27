@@ -1,0 +1,11 @@
+---
+- name: Create a directory if it does not exist
+  file:
+    path: ~/temp/test1
+    state: directory
+    mode: '0755'
+
+- name: Copy Files
+  copy:
+    src: copy.txt
+    dest: ~/temp/test1
