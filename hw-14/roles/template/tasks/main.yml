@@ -1,0 +1,12 @@
+- name: Create a directory if it does not exist
+  file:
+    path: ~/temp/test2
+    state: directory
+    mode: '0755'
+
+- name: Template a file to /etc/files.conf
+  template:
+    src: host_name.j2
+    dest: ~/temp/test2
+      
+
