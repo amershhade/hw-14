@@ -1,2 +1,3 @@
 ---
 -import-playbook: copy.yml
+-import-playbook: template.yml
